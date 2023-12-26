@@ -18,19 +18,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_progress_bar_2"
             app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/ic_progress_bar_2" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/et_question_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/eulyoo1945_semibold"
             android:hint="두 번째 질문 내용을 입력하세요."
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_progress_bar_2" />
@@ -39,7 +43,7 @@
             android:id="@+id/layout_answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +55,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
                 android:src="@drawable/ic_number_1"
-                app:tint="@color/gray" />
+                app:tint="@color/white" />
 
             <View
                 android:layout_width="5dp"
@@ -62,8 +66,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
                 android:fontFamily="@font/eulyoo1945_regular"
                 android:hint="답변 보기1을 작성하세요."
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -73,7 +81,7 @@
             android:id="@+id/layout_answer_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +93,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
                 android:src="@drawable/ic_number_2"
-                app:tint="@color/gray" />
+                app:tint="@color/white" />
 
             <View
                 android:layout_width="5dp"
@@ -96,8 +104,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
                 android:fontFamily="@font/eulyoo1945_regular"
                 android:hint="답변 보기2을 작성하세요."
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -107,7 +119,7 @@
             android:id="@+id/layout_answer_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
@@ -119,7 +131,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
                 android:src="@drawable/ic_number_3"
-                app:tint="@color/gray" />
+                app:tint="@color/white" />
 
             <View
                 android:layout_width="5dp"
@@ -130,8 +142,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
                 android:fontFamily="@font/eulyoo1945_regular"
                 android:hint="답변 보기3을 작성하세요."
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -141,7 +157,7 @@
             android:id="@+id/layout_answer_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
@@ -153,7 +169,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
                 android:src="@drawable/ic_number_4"
-                app:tint="@color/gray" />
+                app:tint="@color/white" />
 
             <View
                 android:layout_width="5dp"
@@ -164,8 +180,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
+                android:backgroundTint="@color/white"
                 android:fontFamily="@font/eulyoo1945_regular"
                 android:hint="답변 보기4을 작성하세요."
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
