@@ -13,19 +13,35 @@
         android:background="@color/coral"
         tools:context=".presentation.ExaminerActivity">
 
+        <ImageView
+            android:id="@+id/iv_app_name"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_app_image"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_app_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <EditText
             android:id="@+id/et_examiner_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/eulyoo1945_regular"
-            android:gravity="center"
             android:hint="@string/examiner_notice"
-            android:textColorHint="@color/green"
+            android:textColorHint="@color/white"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/iv_app_image" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_examiner_next"
