@@ -37,6 +37,9 @@ class QuestionCreate2Activity :
                 binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                question2Data.choice2_bool = false
+                question2Data.choice3_bool = false
+                question2Data.choice4_bool = false
             } else {
                 binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
             }
@@ -48,6 +51,9 @@ class QuestionCreate2Activity :
                 binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                question2Data.choice1_bool = false
+                question2Data.choice3_bool = false
+                question2Data.choice4_bool = false
             } else {
                 binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
             }
@@ -59,6 +65,9 @@ class QuestionCreate2Activity :
                 binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                question2Data.choice1_bool = false
+                question2Data.choice2_bool = false
+                question2Data.choice4_bool = false
             } else {
                 binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
             }
@@ -70,6 +79,9 @@ class QuestionCreate2Activity :
                 binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                question2Data.choice1_bool = false
+                question2Data.choice2_bool = false
+                question2Data.choice3_bool = false
             } else {
                 binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
             }

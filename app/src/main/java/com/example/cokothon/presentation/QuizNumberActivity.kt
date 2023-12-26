@@ -13,10 +13,11 @@ class QuizNumberActivity :
         binding.btnQuizNumberNext.setOnClickListener {
             val quizNumber = binding.etQuizNumberInput.text.toString()
             if (quizNumber == "") {
-                toast("퀴즈 고유 번호를 입력해 주세요.")
+                toast("출제자 고유 번호를 입력해 주세요.")
             } else {
                 val intentToExamineeActivity = Intent(this, ExamineeActivity::class.java)
                 startActivity(intentToExamineeActivity)
+                finish()
             }
         }
     }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
+        android:layout_height="match_parent"
+        android:background="@color/coral">
 
         <TextView
             android:id="@+id/quizNumberTextView"
@@ -15,7 +15,12 @@
             android:layout_centerInParent="true"
             android:fontFamily="@font/eulyoo1945_semibold"
             android:text="고유번호"
-            android:textSize="24sp" />
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <android.widget.Button
             android:id="@+id/copyButton"
@@ -23,12 +28,38 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/quizNumberTextView"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/shape_main_btn_rectangle"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/green"
             android:fontFamily="@font/eulyoo1945_regular"
             android:text="복사"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/quizNumberTextView" />
 
-    </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_app_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/img_app_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_main_btn_rectangle"
+            android:backgroundTint="@color/coral"
+            android:fontFamily="@font/eulyoo1945_regular"
+            android:text="메인 페이지"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/iv_app_image"
+            app:layout_constraintTop_toBottomOf="@id/iv_app_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
