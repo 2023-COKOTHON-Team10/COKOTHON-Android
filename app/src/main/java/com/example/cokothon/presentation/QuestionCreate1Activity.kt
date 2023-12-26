@@ -9,19 +9,19 @@ import com.example.cokothon.core.util.context.toast
 import com.example.cokothon.databinding.ActivityQuestionCreate1Binding
 
 class QuestionCreate1Activity :
-    BindingActivity<ActivityQuestionCreate1Binding>(R.layout.activity_question_create_1) {
+        BindingActivity<ActivityQuestionCreate1Binding>(R.layout.activity_question_create_1) {
     private var question1Data = QuestionData(
-        contents = "",
-        user_id = 0,    // 현재 가짜 데이터, 서버에서 받아와야 함
-        type = "1",
-        choice1 = "",
-        choice1_bool = false,
-        choice2 = "",
-        choice2_bool = false,
-        choice3 = "",
-        choice3_bool = false,
-        choice4 = "",
-        choice4_bool = false
+            contents = "",
+            user_id = 0,    // 현재 가짜 데이터, 서버에서 받아와야 함
+            type = "1",
+            choice1 = "",
+            choice1_bool = false,
+            choice2 = "",
+            choice2_bool = false,
+            choice3 = "",
+            choice3_bool = false,
+            choice4 = "",
+            choice4_bool = false
     )
 
     override fun initView() {
