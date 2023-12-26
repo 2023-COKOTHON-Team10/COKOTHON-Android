@@ -1,6 +1,7 @@
 package com.example.cokothon.presentation
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.res.ColorStateList
 import android.util.Log
 import com.example.cokothon.R
@@ -10,6 +11,7 @@ import com.example.cokothon.databinding.ActivityQuestionCreate2Binding
 
 class QuestionCreate2Activity :
     BindingActivity<ActivityQuestionCreate2Binding>(R.layout.activity_question_create_2) {
+    lateinit var spf: SharedPreferences
     private var question2Data = QuestionData(
         contents = "",
         user_id = 0,    // 현재 가짜 데이터, 서버에서 받아와야 함
@@ -25,6 +27,7 @@ class QuestionCreate2Activity :
     )
     override fun initView() {
         // 로직 작성
+        spf = applicationContext.getSharedPreferences("question2", MODE_PRIVATE)
         nextBtnClickListener()
         numberClickListener()
     }
@@ -94,6 +97,11 @@ class QuestionCreate2Activity :
             var choiceBoolean = (question2Data.choice1_bool || question2Data.choice2_bool || question2Data.choice3_bool || question2Data.choice4_bool)
 
             if (isValuesHasData && choiceBoolean) {
+                spf.edit().putString("contents", question2Data.contents).apply()
+                spf.edit().putString("choice1", question2Data.choice1).apply()
+                spf.edit().putString("choice2", question2Data.choice2).apply()
+                spf.edit().putString("choice3", question2Data.choice3).apply()
+                spf.edit().putString("choice4", question2Data.choice4).apply()
                 startActivity(Intent(this, QuestionCreate3Activity::class.java))
                 finish()
             } else {
