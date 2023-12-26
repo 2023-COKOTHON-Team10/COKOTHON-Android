@@ -36,17 +36,17 @@ class QuestionCreate4Activity :
                 binding.ivFourthQuestionAnswer1.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.yellow))
                 binding.ivFourthQuestionAnswer2.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer3.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer4.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 question4Data.choice2_bool = false
                 question4Data.choice3_bool = false
                 question4Data.choice4_bool = false
             } else {
                 binding.ivFourthQuestionAnswer1.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
             }
         }
         binding.ivFourthQuestionAnswer2.setOnClickListener {
@@ -55,17 +55,17 @@ class QuestionCreate4Activity :
                 binding.ivFourthQuestionAnswer2.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.yellow))
                 binding.ivFourthQuestionAnswer1.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer3.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer4.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 question4Data.choice1_bool = false
                 question4Data.choice3_bool = false
                 question4Data.choice4_bool = false
             } else {
                 binding.ivFourthQuestionAnswer2.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
             }
         }
         binding.ivFourthQuestionAnswer3.setOnClickListener {
@@ -74,17 +74,17 @@ class QuestionCreate4Activity :
                 binding.ivFourthQuestionAnswer3.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.yellow))
                 binding.ivFourthQuestionAnswer1.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer2.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer4.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 question4Data.choice1_bool = false
                 question4Data.choice2_bool = false
                 question4Data.choice4_bool = false
             } else {
                 binding.ivFourthQuestionAnswer3.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
             }
         }
         binding.ivFourthQuestionAnswer4.setOnClickListener {
@@ -93,17 +93,17 @@ class QuestionCreate4Activity :
                 binding.ivFourthQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.yellow))
                 binding.ivFourthQuestionAnswer1.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer2.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 binding.ivFourthQuestionAnswer3.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
                 question4Data.choice1_bool = false
                 question4Data.choice2_bool = false
                 question4Data.choice3_bool = false
             } else {
                 binding.ivFourthQuestionAnswer4.imageTintList =
-                    ColorStateList.valueOf(getColor(R.color.gray))
+                    ColorStateList.valueOf(getColor(R.color.white))
             }
         }
     }

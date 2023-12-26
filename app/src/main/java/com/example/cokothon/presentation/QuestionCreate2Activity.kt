@@ -34,56 +34,56 @@ class QuestionCreate2Activity :
             question2Data.choice1_bool = !question2Data.choice1_bool
             if (question2Data.choice1_bool) {
                 binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.yellow))
-                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
                 question2Data.choice2_bool = false
                 question2Data.choice3_bool = false
                 question2Data.choice4_bool = false
             } else {
-                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
             }
         }
         binding.ivSecondQuestionAnswer2.setOnClickListener {
             question2Data.choice2_bool = !question2Data.choice2_bool
             if (question2Data.choice2_bool) {
                 binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.yellow))
-                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
                 question2Data.choice1_bool = false
                 question2Data.choice3_bool = false
                 question2Data.choice4_bool = false
             } else {
-                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
             }
         }
         binding.ivSecondQuestionAnswer3.setOnClickListener {
             question2Data.choice3_bool = !question2Data.choice3_bool
             if (question2Data.choice3_bool) {
                 binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.yellow))
-                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
                 question2Data.choice1_bool = false
                 question2Data.choice2_bool = false
                 question2Data.choice4_bool = false
             } else {
-                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
             }
         }
         binding.ivSecondQuestionAnswer4.setOnClickListener {
             question2Data.choice4_bool = !question2Data.choice4_bool
             if (question2Data.choice4_bool) {
                 binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.yellow))
-                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
-                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer1.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer2.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+                binding.ivSecondQuestionAnswer3.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
                 question2Data.choice1_bool = false
                 question2Data.choice2_bool = false
                 question2Data.choice3_bool = false
             } else {
-                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.gray))
+                binding.ivSecondQuestionAnswer4.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
             }
         }
     }

@@ -31,6 +31,7 @@ class QuestionResult5Activity : BindingActivity<ActivityQuestionResult5Binding>(
         // Set click listener for the next button
         btnNext.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 

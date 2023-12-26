@@ -3,6 +3,7 @@ import android.content.Intent
 import android.widget.Button
 import com.example.cokothon.R
 import com.example.cokothon.core.base.BindingActivity
+import com.example.cokothon.core.util.context.toast
 import com.example.cokothon.databinding.ActivityQuizResultBinding
 
 class QuizResultActivity : BindingActivity<ActivityQuizResultBinding>(R.layout.activity_quiz_result) {
@@ -13,7 +14,16 @@ class QuizResultActivity : BindingActivity<ActivityQuizResultBinding>(R.layout.a
 
     private fun nextBtnClickListener() {
         binding.btnResult.setOnClickListener {
-            startActivity(Intent(this, QuestionResult1Activity::class.java))
+            var questionerName = binding.examineeName.text.toString()
+            var questionNum = binding.quizNum.text.toString()
+
+            if (questionerName != "" && questionNum != "") {
+                startActivity(Intent(this, QuestionResult1Activity::class.java))
+                finish()
+            }
+            else {
+                toast("입력되지 않은 값이 있습니다.")
+            }
         }
     }
 }
