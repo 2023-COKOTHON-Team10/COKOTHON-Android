@@ -23,7 +23,7 @@ class QuestionResult4Activity : BindingActivity<ActivityQuestionResult4Binding>(
         val answers: List<Pair<String, String>> = answersFromBackend()
 
         // Set temporary question title
-        tvQuestionTitle.text = "이곳은 네번째 질문 자리 입니다"
+        tvQuestionTitle.text = "4. 어릴 때 영희가 철수가 던진 축구공을 맞아 깁스한 부위는?"
 
         // Display answers
         displayAnswers(answers)
@@ -38,11 +38,10 @@ class QuestionResult4Activity : BindingActivity<ActivityQuestionResult4Binding>(
     private fun answersFromBackend(): List<Pair<String, String>> {
         // Assume A, B, C, D, E each answered 1, 2, 3, 4, 5 respectively
         return listOf(
-            Pair("A", "1"),
-            Pair("B", "2"),
-            Pair("C", "3"),
-            Pair("D", "4"),
-            Pair("E", "5")
+            Pair("엄마", "3 오른쪽 다리"),
+            Pair("아빠", "3 오른쪽 다리"),
+            Pair("누나", "3 오른쪽 다리"),
+            Pair("철수", "4 왼쪽 다리"),
         )
     }
 
@@ -51,7 +50,7 @@ class QuestionResult4Activity : BindingActivity<ActivityQuestionResult4Binding>(
 
         // Iterate through answers and append to the StringBuilder
         for ((username, answerContent) in answers) {
-            answersText.append("$username : $answerContent\n")
+            answersText.append("$username : $answerContent\n\n")
         }
 
         // Set the text to the TextView
