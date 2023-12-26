@@ -17,7 +17,11 @@ class ExaminerActivity : BindingActivity<ActivityExaminerBinding>(R.layout.activ
             if (examinerID == "") {
                 toast("출제자 이름을 입력해 주세요.")
             } else {
-                // 퀴즈 생성 액티비티로 이동
+                val userData = UserData(
+                    name = examinerID
+                )
+                // 서버로 name 전송
+
                 startActivity(Intent(this, QuestionCreate1Activity::class.java))
                 finish()
             }
