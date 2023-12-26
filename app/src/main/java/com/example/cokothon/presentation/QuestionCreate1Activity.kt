@@ -2,6 +2,7 @@ package com.example.cokothon.presentation
 
 import android.content.Intent
 import android.content.res.ColorStateList
+import android.util.Log
 import com.example.cokothon.R
 import com.example.cokothon.core.base.BindingActivity
 import com.example.cokothon.core.util.context.toast
@@ -86,6 +87,7 @@ class QuestionCreate1Activity :
             } else {
                 toast("입력되지 않은 값이 있습니다.")
             }
+            Log.d("question1Data", question1Data.toString())
         }
     }
 
