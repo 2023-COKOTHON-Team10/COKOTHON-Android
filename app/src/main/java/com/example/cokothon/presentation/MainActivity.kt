@@ -10,6 +10,7 @@ class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main
         // 로직 작성
         createBtnClickListener()
         answerBtnClickListener()
+        resultBtnClickListener()
     }
 
     private fun createBtnClickListener() {
@@ -21,6 +22,11 @@ class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main
     private fun answerBtnClickListener() {
         binding.btnAnswerQuestion.setOnClickListener {
             startActivity(Intent(this, ExamineeActivity::class.java))
+        }
+    }
+    private fun resultBtnClickListener() {
+        binding.btnCheckAnswer.setOnClickListener {
+            startActivity(Intent(this, QuizResultActivity::class.java))
         }
     }
 }
