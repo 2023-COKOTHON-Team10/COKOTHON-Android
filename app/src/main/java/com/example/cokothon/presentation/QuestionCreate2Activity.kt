@@ -83,6 +83,7 @@ class QuestionCreate2Activity :
 
             if (isValuesHasData && choiceBoolean) {
                 startActivity(Intent(this, QuestionCreate3Activity::class.java))
+                finish()
             } else {
                 toast("입력되지 않은 값이 있습니다.")
             }
