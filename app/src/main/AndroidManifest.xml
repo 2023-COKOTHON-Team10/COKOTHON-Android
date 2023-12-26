@@ -26,15 +26,35 @@
         </activity>
         <activity
             android:name=".presentation.QuizNumberActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".presentation.ExaminerActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".presentation.ExamineeActivity"
-            android:exported="true"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.QuestionCreate1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.QuestionCreate2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.QuestionCreate3Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.QuestionCreate4Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.QuestionCreate5Activity"
+            android:exported="false"
             android:screenOrientation="portrait" />
     </application>
 

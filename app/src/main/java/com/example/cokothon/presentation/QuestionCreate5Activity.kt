@@ -21,7 +21,7 @@ class QuestionCreate5Activity :
             val fifthQuestionAnswer3 = binding.etAnswer3.text?.toString()
             val fifthQuestionAnswer4 = binding.etAnswer4.text?.toString()
 
-            if (fifthQuestionTitle != null && fifthQuestionAnswer1 != null && fifthQuestionAnswer2 != null && fifthQuestionAnswer3 != null && fifthQuestionAnswer4 != null) {
+            if (fifthQuestionTitle != "" && fifthQuestionAnswer1 != "" && fifthQuestionAnswer2 != "" && fifthQuestionAnswer3 != "" && fifthQuestionAnswer4 != "") {
                 startActivity(Intent(this, MainActivity::class.java))
             } else {
                 toast("입력되지 않은 값이 있습니다.")

@@ -21,7 +21,7 @@ class QuestionCreate1Activity :
             val firstQuestionAnswer3 = binding.etAnswer3.text?.toString()
             val firstQuestionAnswer4 = binding.etAnswer4.text?.toString()
 
-            if (firstQuestionTitle != null && firstQuestionAnswer1 != null && firstQuestionAnswer2 != null && firstQuestionAnswer3 != null && firstQuestionAnswer4 != null) {
+            if (firstQuestionTitle != "" && firstQuestionAnswer1 != "" && firstQuestionAnswer2 != "" && firstQuestionAnswer3 != "" && firstQuestionAnswer4 != "" ) {
                 startActivity(Intent(this, QuestionCreate2Activity::class.java))
             } else {
                 toast("입력되지 않은 값이 있습니다.")

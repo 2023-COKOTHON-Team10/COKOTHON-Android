@@ -10,8 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.MainActivity"
-        android:background="@color/coral">
+        android:background="@color/coral"
+        tools:context=".presentation.MainActivity">
 
 
         <EditText
@@ -37,6 +37,7 @@
             app:layout_constraintTop_toBottomOf="@id/et_question_title">
 
             <ImageView
+                android:id="@+id/iv_fifth_question_answer_1"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
@@ -70,6 +71,7 @@
             app:layout_constraintTop_toBottomOf="@id/layout_answer_1">
 
             <ImageView
+                android:id="@+id/iv_fifth_question_answer_2"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
@@ -103,6 +105,7 @@
             app:layout_constraintTop_toBottomOf="@id/layout_answer_2">
 
             <ImageView
+                android:id="@+id/iv_fifth_question_answer_3"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
@@ -136,6 +139,7 @@
             app:layout_constraintTop_toBottomOf="@id/layout_answer_3">
 
             <ImageView
+                android:id="@+id/iv_fifth_question_answer_4"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="30dp"
@@ -167,9 +171,9 @@
             android:layout_marginBottom="50dp"
             android:background="@drawable/shape_main_btn_rectangle"
             android:backgroundTint="@color/green"
-            android:textColor="@color/white"
             android:fontFamily="@font/eulyoo1945_regular"
             android:text="제출"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
