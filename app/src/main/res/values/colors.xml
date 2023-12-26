@@ -5,4 +5,10 @@
     <color name="yellow">#FFF8DCAD</color>
     <color name="dark_red">#FF5F1A13</color>
     <color name="light_yellow">#FFFEEDC8</color>
+    <color name="coral">#FFC55647</color>
+    <color name="red">#FFAA1C20</color>
+    <color name="green">#FF687E3D</color>
+    <color name="olive_green">#FF334D10</color>
+    <color name="brown">#FF4E341D</color>
+    <color name="black">#FF130003</color>
 </resources>
