@@ -1,6 +1,7 @@
 package com.example.cokothon.presentation
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.res.ColorStateList
 import android.util.Log
 import com.example.cokothon.R
@@ -49,19 +50,26 @@ class QuestionAnswerActivity :
 //                break
 //            }
 //        }
+
+        var questionNumber = "question$questionType"
+        val spf: SharedPreferences =
+            applicationContext.getSharedPreferences(questionNumber, MODE_PRIVATE)
+
         currentQuestionData = QuestionData(
-            contents = "질문",
+            contents = spf.getString("contents", "").toString(),
             user_id = 0,    // 현재 가짜 데이터, 서버에서 받아와야 함
             type = questionType,
-            choice1 = "1",
+            choice1 = spf.getString("choice1", "").toString(),
             choice1_bool = false,
-            choice2 = "2",
+            choice2 = spf.getString("choice2", "").toString(),
             choice2_bool = false,
-            choice3 = "3",
+            choice3 = spf.getString("choice3", "").toString(),
             choice3_bool = false,
-            choice4 = "4",
+            choice4 = spf.getString("choice4", "").toString(),
             choice4_bool = false
         )
+
+        Log.d("currentQuestionData", currentQuestionData.toString())
 
         binding.tvQuestionTitle.text = currentQuestionData.contents
         binding.tvAnswer1.text = currentQuestionData.choice1
@@ -217,8 +225,14 @@ class QuestionAnswerActivity :
         // 서버로 answerData 전송
         Log.d("answerData", answerData.toString())
 
-        val intentToMain = Intent(this, MainActivity::class.java)
-        startActivity(intentToMain)
-        finish()
+        val spf: SharedPreferences =
+            applicationContext.getSharedPreferences("answer", MODE_PRIVATE)
+        val success = spf.edit().putString("answer", answerData.toString()).commit()
+        if (success) {
+            val intentToMain = Intent(this, MainActivity::class.java)
+            startActivity(intentToMain)
+            finish()
+        }
+
     }
 }

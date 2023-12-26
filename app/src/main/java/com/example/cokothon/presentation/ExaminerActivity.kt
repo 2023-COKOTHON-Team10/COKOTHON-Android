@@ -1,13 +1,17 @@
 package com.example.cokothon.presentation
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import com.example.cokothon.R
 import com.example.cokothon.core.base.BindingActivity
 import com.example.cokothon.core.util.context.toast
 import com.example.cokothon.databinding.ActivityExaminerBinding
 
 class ExaminerActivity : BindingActivity<ActivityExaminerBinding>(R.layout.activity_examiner) {
+    lateinit var spf: SharedPreferences
     override fun initView() {
+        spf = applicationContext.getSharedPreferences("examiner", Context.MODE_PRIVATE)
         nextBtnClickListener()
     }
 
@@ -22,8 +26,11 @@ class ExaminerActivity : BindingActivity<ActivityExaminerBinding>(R.layout.activ
                 )
                 // 서버로 name 전송
 
-                startActivity(Intent(this, QuestionCreate1Activity::class.java))
-                finish()
+                val success = spf.edit().putString("nickname", examinerID).commit()
+                if (success) {
+                    startActivity(Intent(this, QuestionCreate1Activity::class.java))
+                    finish()
+                }
             }
         }
     }
