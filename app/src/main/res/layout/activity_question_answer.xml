@@ -89,10 +89,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:hint="답변2인데요. 바나나라고 해봅시다."
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="답변2인데요. 바나나라고 해봅시다." />
 
         </LinearLayout>
 
@@ -124,10 +124,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:hint="답변3인데요. 포도라고 해봅시다."
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="답변3인데요. 포도라고 해봅시다." />
 
         </LinearLayout>
 
@@ -159,10 +159,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:hint="답변4인데요. 감이라고 해봅시다."
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="답변4인데요. 감이라고 해봅시다." />
 
         </LinearLayout>
 

@@ -1,5 +1,6 @@
 package com.example.cokothon.presentation
 
+import android.content.Intent
 import com.example.cokothon.R
 import com.example.cokothon.core.base.BindingActivity
 import com.example.cokothon.core.util.context.toast
@@ -13,6 +14,7 @@ class ExamineeActivity : BindingActivity<ActivityExamineeBinding>(R.layout.activ
                 toast("수험자 이름을 입력해 주세요.")
             } else {
                 // 퀴즈 풀기 액티비티로 이동
+                startActivity(Intent(this, QuestionAnswerActivity::class.java))
             }
         }
     }

@@ -21,7 +21,7 @@ class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main
 
     private fun answerBtnClickListener() {
         binding.btnAnswerQuestion.setOnClickListener {
-            startActivity(Intent(this, ExamineeActivity::class.java))
+            startActivity(Intent(this, QuizNumberActivity::class.java))
         }
     }
     private fun resultBtnClickListener() {

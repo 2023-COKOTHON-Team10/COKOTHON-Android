@@ -102,7 +102,7 @@ class QuestionCreate5Activity :
             var choiceBoolean = (question5Data.choice1_bool || question5Data.choice2_bool || question5Data.choice3_bool || question5Data.choice4_bool)
 
             if (isValuesHasData && choiceBoolean) {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, ShowQuizNumberActivity::class.java))
             } else {
                 toast("입력되지 않은 값이 있습니다.")
             }
