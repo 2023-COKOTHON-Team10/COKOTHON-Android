@@ -23,6 +23,7 @@ class QuestionCreate3Activity :
         choice4 = "",
         choice4_bool = false
     )
+
     override fun initView() {
         // 로직 작성
         nextBtnClickListener()
@@ -41,6 +42,9 @@ class QuestionCreate3Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivThirdQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question3Data.choice2_bool = false
+                question3Data.choice3_bool = false
+                question3Data.choice4_bool = false
             } else {
                 binding.ivThirdQuestionAnswer1.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -57,6 +61,9 @@ class QuestionCreate3Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivThirdQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question3Data.choice1_bool = false
+                question3Data.choice3_bool = false
+                question3Data.choice4_bool = false
             } else {
                 binding.ivThirdQuestionAnswer2.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -73,6 +80,9 @@ class QuestionCreate3Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivThirdQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question3Data.choice1_bool = false
+                question3Data.choice2_bool = false
+                question3Data.choice4_bool = false
             } else {
                 binding.ivThirdQuestionAnswer3.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -89,6 +99,9 @@ class QuestionCreate3Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivThirdQuestionAnswer3.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question3Data.choice1_bool = false
+                question3Data.choice2_bool = false
+                question3Data.choice3_bool = false
             } else {
                 binding.ivThirdQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -99,7 +112,8 @@ class QuestionCreate3Activity :
     private fun nextBtnClickListener() {
         binding.btnNext.setOnClickListener {
             var isValuesHasData = getQuestionData()
-            var choiceBoolean = (question3Data.choice1_bool || question3Data.choice2_bool || question3Data.choice3_bool || question3Data.choice4_bool)
+            var choiceBoolean =
+                (question3Data.choice1_bool || question3Data.choice2_bool || question3Data.choice3_bool || question3Data.choice4_bool)
 
             if (isValuesHasData && choiceBoolean) {
                 startActivity(Intent(this, QuestionCreate4Activity::class.java))
