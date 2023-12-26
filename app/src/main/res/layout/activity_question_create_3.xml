@@ -11,7 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/coral"
-        tools:context=".presentation.MainActivity">
+        tools:context=".presentation.QuestionCreate3Activity">
+
+        <ImageView
+            android:id="@+id/iv_progress_bar_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/ic_progress_bar_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <EditText
@@ -19,19 +29,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:fontFamily="@font/eulyoo1945_semibold"
             android:hint="세 번째 질문 내용을 입력하세요."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/iv_progress_bar_3" />
 
         <LinearLayout
             android:id="@+id/layout_answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +166,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:hint="답변 보기2을 작성하세요."
+                android:hint="답변 보기4을 작성하세요."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
