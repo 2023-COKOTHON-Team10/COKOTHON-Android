@@ -25,16 +25,17 @@
             android:id="@+id/iv_app_image"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_app_image"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="180dp"
+            android:src="@drawable/img_app_image"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/et_examinee_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/eulyoo1945_regular"
             android:hint="@string/examinee_notice"
             android:textColorHint="@color/white"
