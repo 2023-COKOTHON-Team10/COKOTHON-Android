@@ -3,11 +3,11 @@
 
     <!-- QuizNumberActivity -->
     <string name="quiz_number_next">다음</string>
-    <string name="quiz_number_notice">퀴즈 고유 번호를 입력하세요.</string>
+    <string name="quiz_number_notice">퀴즈 고유 번호를 입력해 주세요.</string>
 
     <!-- ExaminerActivity -->
-    <string name="examiner_notice">출제자 번호를 입력하세요.</string>
+    <string name="examiner_notice">출제자 이름을 입력해 주세요.</string>
 
     <!-- ExamineeActivity -->
-    <string name="examinee_notice">수험자 번호를 입력하세요.</string>
+    <string name="examinee_notice">수험자 이름을 입력해 주세요.</string>
 </resources>
