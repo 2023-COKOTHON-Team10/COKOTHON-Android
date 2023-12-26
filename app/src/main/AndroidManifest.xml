@@ -28,6 +28,14 @@
             android:name=".presentation.QuizNumberActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.ExaminerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.ExamineeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
