@@ -22,7 +22,7 @@ class QuestionCreate5Activity :
             val fifthQuestionAnswer4 = binding.etAnswer4.text?.toString()
 
             if (fifthQuestionTitle != "" && fifthQuestionAnswer1 != "" && fifthQuestionAnswer2 != "" && fifthQuestionAnswer3 != "" && fifthQuestionAnswer4 != "") {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, ShowQuizNumberActivity::class.java))
             } else {
                 toast("입력되지 않은 값이 있습니다.")
             }

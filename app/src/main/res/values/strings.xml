@@ -10,4 +10,8 @@
 
     <!-- ExamineeActivity -->
     <string name="examinee_notice">수험자 이름을 입력해 주세요.</string>
+
+    <string name="copy_button">고유번호 복사</string>
+    <string name="quiz_number">%s</string>
+
 </resources>
