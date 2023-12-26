@@ -55,8 +55,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:textSize="20sp"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="답변1인데요. 사과라고 해봅시다." />
@@ -91,8 +91,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:textSize="20sp"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="답변2인데요. 바나나라고 해봅시다." />
@@ -127,8 +127,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:textSize="20sp"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="답변3인데요. 포도라고 해봅시다." />
@@ -163,8 +163,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/eulyoo1945_regular"
-                android:textSize="20sp"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="답변4인데요. 감이라고 해봅시다." />
@@ -183,6 +183,7 @@
             android:fontFamily="@font/eulyoo1945_regular"
             android:text="다음"
             android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

@@ -203,6 +203,7 @@
             android:fontFamily="@font/eulyoo1945_regular"
             android:text="다음"
             android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

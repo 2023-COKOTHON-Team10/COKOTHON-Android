@@ -32,6 +32,7 @@ class QuestionResult1Activity : BindingActivity<ActivityQuestionResult1Binding>(
         btnNext.setOnClickListener {
             // Navigate to QuestionResult2Activity
             startActivity(Intent(this, QuestionResult2Activity::class.java))
+            finish()
         }
     }
 
