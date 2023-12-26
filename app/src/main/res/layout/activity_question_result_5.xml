@@ -46,7 +46,7 @@
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/tv_question_title" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:background="@drawable/shape_main_btn_rectangle"
             android:backgroundTint="@color/green"
             android:fontFamily="@font/eulyoo1945_regular"
-            android:text="다음"
+            android:text="종료"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
