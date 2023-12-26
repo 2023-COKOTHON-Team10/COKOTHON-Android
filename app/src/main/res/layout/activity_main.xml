@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <android.widget.Button
-                android:id="@+id/btn_question"
+                android:id="@+id/btn_create_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent" />
 
             <android.widget.Button
-                android:id="@+id/btn_answer"
+                android:id="@+id/btn_answer_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -53,6 +53,7 @@
         </LinearLayout>
 
         <android.widget.Button
+            android:id="@+id/btn_check_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="120dp"

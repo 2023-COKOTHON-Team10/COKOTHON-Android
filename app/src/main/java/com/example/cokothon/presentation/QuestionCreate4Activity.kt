@@ -7,7 +7,7 @@ import com.example.cokothon.core.util.context.toast
 import com.example.cokothon.databinding.ActivityQuestionCreate4Binding
 
 class QuestionCreate4Activity :
-    BindingActivity<ActivityQuestionCreate4Binding>(R.layout.activity_question_create_1) {
+    BindingActivity<ActivityQuestionCreate4Binding>(R.layout.activity_question_create_4) {
     override fun initView() {
         // 로직 작성
         nextBtnClickListener()
@@ -21,7 +21,7 @@ class QuestionCreate4Activity :
             val fourthQuestionAnswer3 = binding.etAnswer3.text?.toString()
             val fourthQuestionAnswer4 = binding.etAnswer4.text?.toString()
 
-            if (fourthQuestionTitle != null && fourthQuestionAnswer1 != null && fourthQuestionAnswer2 != null && fourthQuestionAnswer3 != null && fourthQuestionAnswer4 != null) {
+            if (fourthQuestionTitle != "" && fourthQuestionAnswer1 != "" && fourthQuestionAnswer2 != "" && fourthQuestionAnswer3 != "" && fourthQuestionAnswer4 != "") {
                 startActivity(Intent(this, QuestionCreate5Activity::class.java))
             } else {
                 toast("입력되지 않은 값이 있습니다.")
