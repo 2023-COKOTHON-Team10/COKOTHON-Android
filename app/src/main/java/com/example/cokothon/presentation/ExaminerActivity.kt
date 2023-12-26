@@ -19,6 +19,7 @@ class ExaminerActivity : BindingActivity<ActivityExaminerBinding>(R.layout.activ
             } else {
                 // 퀴즈 생성 액티비티로 이동
                 startActivity(Intent(this, QuestionCreate1Activity::class.java))
+                finish()
             }
         }
     }
