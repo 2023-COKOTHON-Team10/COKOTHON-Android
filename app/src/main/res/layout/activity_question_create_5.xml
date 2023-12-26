@@ -33,7 +33,6 @@
             android:hint="다섯 번째 질문 내용을 입력하세요."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_progress_bar_5"/>
 
         <LinearLayout
