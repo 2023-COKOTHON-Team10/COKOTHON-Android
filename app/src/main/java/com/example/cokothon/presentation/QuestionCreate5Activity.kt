@@ -41,6 +41,9 @@ class QuestionCreate5Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivFifthQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question5Data.choice2_bool = false
+                question5Data.choice3_bool = false
+                question5Data.choice4_bool = false
             } else {
                 binding.ivFifthQuestionAnswer1.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -57,6 +60,9 @@ class QuestionCreate5Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivFifthQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question5Data.choice1_bool = false
+                question5Data.choice3_bool = false
+                question5Data.choice4_bool = false
             } else {
                 binding.ivFifthQuestionAnswer2.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -73,6 +79,9 @@ class QuestionCreate5Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivFifthQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question5Data.choice1_bool = false
+                question5Data.choice2_bool = false
+                question5Data.choice4_bool = false
             } else {
                 binding.ivFifthQuestionAnswer3.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
@@ -89,6 +98,9 @@ class QuestionCreate5Activity :
                     ColorStateList.valueOf(getColor(R.color.gray))
                 binding.ivFifthQuestionAnswer3.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))
+                question5Data.choice1_bool = false
+                question5Data.choice2_bool = false
+                question5Data.choice3_bool = false
             } else {
                 binding.ivFifthQuestionAnswer4.imageTintList =
                     ColorStateList.valueOf(getColor(R.color.gray))

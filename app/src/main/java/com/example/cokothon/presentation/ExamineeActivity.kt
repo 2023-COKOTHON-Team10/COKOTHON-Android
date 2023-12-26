@@ -15,6 +15,7 @@ class ExamineeActivity : BindingActivity<ActivityExamineeBinding>(R.layout.activ
             } else {
                 // 퀴즈 풀기 액티비티로 이동
                 startActivity(Intent(this, QuestionAnswerActivity::class.java))
+                finish()
             }
         }
     }
