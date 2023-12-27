@@ -32,21 +32,20 @@ class ExaminerActivity : BindingActivity<ActivityExaminerBinding>(R.layout.activ
                 )
 
                 // 서버로 name 전송
-                quizService.postUser(RequestUserDto(examinerID)).enqueue(object : Callback<Unit> {
-                    override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
+                quizService.postUser(RequestUserDto(examinerID)).enqueue(object : Callback<Long> {
+                    override fun onResponse(call: Call<Long>, response: Response<Long>) {
                         if (response.isSuccessful) {
-                            toast("성공 $examinerID")
-                            val success = spf.edit().putString("nickname", examinerID).commit()
-                            if (success) {
-                                startActivity(Intent(this@ExaminerActivity, QuestionCreate1Activity::class.java))
-                                finish()
-                            }
+                            toast("성공 $examinerID 유저 번호 ${response.body()}")
+                            spf.edit().putString("nickname", examinerID).apply()
+                            spf.edit().putLong("userId", response.body()!!).apply()
+                            startActivity(Intent(this@ExaminerActivity, QuestionCreate1Activity::class.java))
+                            finish()
                         } else {
                             toast("서버 오류: ${response.errorBody()}")
                         }
                     }
 
-                    override fun onFailure(call: Call<Unit>, t: Throwable) {
+                    override fun onFailure(call: Call<Long>, t: Throwable) {
                         toast("네트워크 오류: ${t.message}")
                     }
                 })

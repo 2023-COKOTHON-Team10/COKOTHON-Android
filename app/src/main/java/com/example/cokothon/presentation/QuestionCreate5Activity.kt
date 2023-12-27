@@ -122,6 +122,7 @@ class QuestionCreate5Activity :
                 spf.edit().putString("choice2", question5Data.choice2).apply()
                 spf.edit().putString("choice3", question5Data.choice3).apply()
                 spf.edit().putString("choice4", question5Data.choice4).apply()
+
                 startActivity(Intent(this, ShowQuizNumberActivity::class.java))
                 finish()
             } else {
